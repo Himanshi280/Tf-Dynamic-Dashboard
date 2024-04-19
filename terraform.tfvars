@@ -1,5 +1,6 @@
 name = "dynamic dashboard"
 permissions = "public_read_only"
+pagename = "dynamic page"
 widget1 =[   
 {
     title  = "widget1"
@@ -34,7 +35,10 @@ widget1 =[
       height = 2
       query="FROM Transaction SELECT rate(count(*), 1 minute)" 
 },
-{
+]
+
+widget2 = [
+      {
     title  = "widget5"
       row    = 2
       column = 9
@@ -83,28 +87,4 @@ widget1 =[
       query="FROM Transaction SELECT rate(count(*), 1 minute)" 
 },
 ]
-
-# dashboard = [
-    
-#     # page = "Page1"
-# {    
-#    name = "1st (ForEach)"
-#      title  = "widget1"
-#       row    = 1
-#       column = 1
-#       width  = 4
-#       height = 4
-#       query="FROM Transaction SELECT rate(count(*), 1 minute)" 
-# },
-
-# {     name = "2nd for_each"
-#       permissions = "public_read_only"
-#       title  = "widget2"
-#       row    = 1
-#       column = 5
-#       width  = 4
-#       height = 4
-#       query="FROM Transaction SELECT rate(count(*), 1 minute)" 
-# }
-# ]  
 
